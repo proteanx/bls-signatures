@@ -38,6 +38,7 @@ set(CHECK "off" CACHE STRING "")
 set(VERBS "off" CACHE STRING "")
 set(ALLOC "AUTO" CACHE STRING "")
 set(SHLIB "OFF" CACHE STRING "")
+set(MULTI "PTHREAD" CACHE STRING "")
 
 set(FP_PRIME 381 CACHE INTEGER "")
 
@@ -67,6 +68,6 @@ set(PP_EXT "LAZYR" CACHE STRING "")
 set(PP_METHD "LAZYR;OATEP" CACHE STRING "")
 
 add_subdirectory(contrib/relic)
-add_subdirectory(contrib/pybind11)
+#add_subdirectory(contrib/pybind11)
 add_subdirectory(src)
-add_subdirectory(python-bindings)
+#add_subdirectory(python-bindings)
